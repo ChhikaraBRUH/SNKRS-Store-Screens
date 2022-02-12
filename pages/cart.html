@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cart | SNKRS Store</title>
+		<link rel="stylesheet" href="/styles/cart.css" />
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav class="nav-container">
+			<div class="left-nav">
+				<a class="nav-heading" href="/index.html">SNKRS</a>
+				<span class="nav-subheading">Store</span>
+			</div>
+
+			<div class="search-div">
+				<input class="search-input" type="text" placeholder="Search items" />
+				<span class="material-icons search-icon">search</span>
+			</div>
+
+			<div class="right-nav">
+				<div class="nav-link">
+					<a href="/pages/login.html">
+						<button class="btn btn-primary-outlined login-btn">Login</button>
+					</a>
+				</div>
+
+				<div class="nav-link">
+					<a href="/pages/wishlist.html">
+						<div class="badge-div">
+							<div class="material-icons-outlined md-36">favorite</div>
+							<span class="badge-icon">5</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="nav-link">
+					<a href="/pages/cart.html">
+						<div class="badge-div">
+							<div class="material-icons-outlined md-36">shopping_cart</div>
+							<span class="badge-icon">3</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Wishlist Section -->
+
+		<section class="cart-section">
+			<div class="cart-items">
+				<h2>Your Cart Items</h2>
+				<div class="cart-container">
+					<!-- Cart Card 1 -->
+
+					<div class="card-container card-horizontal-container">
+						<div class="card-default">
+							<div class="card-header card-horizontal-header">
+								<div class="card-img-div">
+									<img src="/assets/AF2.jpg" class="card-img card-horizontal-img" />
+									<div class="card-dismiss-btn card-hidden-element material-icons-outlined">favorite</div>
+								</div>
+
+								<div class="card-text-div card-horizontal-text-div">
+									<h3 class="card-title">NIKE AF1 '07</h3>
+									<div class="item-quantity">
+										<span class="material-icons">remove_circle</span><span>2</span
+										><span class="material-icons">add_circle</span>
+									</div>
+									<p class="card-subtitle">Price: $120</p>
+								</div>
+							</div>
+
+							<div class="card-footer">
+								<a href="#"><button class="card-button">Remove From Cart</button></a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Cart Card 2 -->
+
+					<div class="card-container card-horizontal-container">
+						<div class="card-default">
+							<div class="card-header card-horizontal-header">
+								<div class="card-img-div">
+									<img src="/assets/RUN2.jpg" class="card-img card-horizontal-img" />
+									<div class="card-dismiss-btn card-hidden-element material-icons-outlined">favorite</div>
+								</div>
+
+								<div class="card-text-div card-horizontal-text-div">
+									<h3 class="card-title">NIKE ZOOMX</h3>
+									<div class="item-quantity">
+										<span class="material-icons">remove_circle</span><span>1</span
+										><span class="material-icons">add_circle</span>
+									</div>
+									<p class="card-subtitle">Price: $180</p>
+								</div>
+							</div>
+
+							<div class="card-footer">
+								<a href="#"><button class="card-button">Remove From Cart</button></a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Cart Card 3 -->
+
+					<div class="card-container card-horizontal-container">
+						<div class="card-default">
+							<div class="card-header card-horizontal-header">
+								<div class="card-img-div">
+									<img src="/assets/SB2.jpg" class="card-img card-horizontal-img" />
+									<div class="card-dismiss-btn card-hidden-element material-icons-outlined">favorite</div>
+								</div>
+
+								<div class="card-text-div card-horizontal-text-div">
+									<h3 class="card-title">NIKE SB Blue</h3>
+									<div class="item-quantity">
+										<span class="material-icons">remove_circle</span><span>3</span
+										><span class="material-icons">add_circle</span>
+									</div>
+									<p class="card-subtitle">Price: $90</p>
+								</div>
+							</div>
+
+							<div class="card-footer">
+								<a href="#"><button class="card-button">Remove From Cart</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Cart Summary Section -->
+
+			<div class="cart-summary">
+				<h3>Order Summary</h3>
+				<br />
+
+				<div class="cart-summary-item">
+					<span>No. of Items:</span>
+					<span>3</span>
+				</div>
+				<div class="cart-summary-item"><span> Total Price: </span><span> $390 </span></div>
+				<div class="cart-summary-item"><span>Delivery Fee:</span><span>Free</span></div>
+				<br />
+				<a href="#"><button class="btn btn-secondary">Checkout</button></a>
+			</div>
+		</section>
+	</body>
+</html>
