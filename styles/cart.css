@@ -104,6 +104,16 @@
 	height: fit-content;
 }
 
+.cart-summary a {
+	text-decoration: none;
+	width: 100%;
+}
+
+.cart-summary a button {
+	width: 100%;
+	justify-content: center;
+}
+
 .cart-summary-item {
 	display: flex;
 	width: 100%;
