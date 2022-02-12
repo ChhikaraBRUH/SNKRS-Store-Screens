@@ -1,0 +1,111 @@
+/* Importing Main CSS */
+
+@import "/main.css";
+
+/* Cart Section */
+
+.cart-section {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap-reverse;
+	gap: 2rem;
+	margin: 2rem;
+}
+
+/* Cart Items */
+
+.cart-items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+/* Cart Container */
+
+.cart-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 2rem;
+}
+
+/* Card Wishlist Icon */
+
+.card-dismiss-btn {
+	background-color: var(--white);
+	border-radius: var(--border-rad-full);
+	padding: 0.5rem;
+	transition: all 0.4s ease;
+}
+
+.card-dismiss-btn:hover {
+	color: var(--primary-color);
+}
+
+/* Card Text Div */
+
+.card-horizontal-text-div {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-sm);
+}
+
+/* Cart Card Subtitle */
+
+.card-subtitle {
+	font-weight: 400;
+	font-size: 1.2rem;
+}
+
+/* Item Quantity Div */
+
+.item-quantity {
+	display: flex;
+	align-items: center;
+	gap: var(--space-xs);
+}
+
+.item-quantity .material-icons {
+	cursor: pointer;
+}
+
+/* Card Button */
+
+.card-button {
+	background-color: var(--white);
+	border: 2px solid var(--black);
+}
+
+.card-button a {
+	color: var(--black);
+}
+
+/* Card Footer */
+
+.card-footer a {
+	text-decoration: none;
+}
+
+/* Cart Summary Section */
+
+.cart-summary {
+	display: flex;
+	background-color: var(--white);
+	flex-direction: column;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin: var(--space-sm);
+	padding: var(--space-sm);
+	border-radius: var(--border-rad-lg);
+	box-shadow: 0 0.5rem 1rem -0.5rem var(--black);
+	height: fit-content;
+}
+
+.cart-summary-item {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
