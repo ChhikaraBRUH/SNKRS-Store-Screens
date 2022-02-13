@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Products | SNKRS Store</title>
+		<link rel="stylesheet" href="/styles/products.css" />
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav class="nav-container">
+			<div class="left-nav">
+				<a class="nav-heading" href="/index.html">SNKRS</a>
+				<span class="nav-subheading">Store</span>
+			</div>
+
+			<div class="search-div">
+				<input class="search-input" type="text" placeholder="Search items" />
+				<span class="material-icons search-icon">search</span>
+			</div>
+
+			<div class="right-nav">
+				<div class="nav-link">
+					<a href="/pages/login.html">
+						<button class="btn btn-primary-outlined login-btn">Login</button>
+					</a>
+				</div>
+
+				<div class="nav-link">
+					<a href="/pages/wishlist.html">
+						<div class="badge-div">
+							<div class="material-icons-outlined md-36">favorite</div>
+							<span class="badge-icon">5</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="nav-link">
+					<a href="/pages/cart.html">
+						<div class="badge-div">
+							<div class="material-icons-outlined md-36">shopping_cart</div>
+							<span class="badge-icon">3</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<!-- Filters Sidebar -->
+      <button class="btn btn-link sidebar-toggle-btn" onclick="toggleFilters()">
+        Show Filters
+      </button>
+			<aside>
+				<div class="filters">
+					<div class="filter-header">
+						<div class="filter-title">Filters</div>
+						<button class="filter-clear-btn">Clear</button>
+					</div>
+
+					<div class="filter-container">
+						<div class="filter-container-title">Sort by price</div>
+						<div class="filter-input-container">
+							<input type="radio" name="price" id="priceLtoH" checked />
+							<label for="priceLtoH">Price low to high</label>
+						</div>
+						<div class="filter-input-container">
+							<input type="radio" name="price" id="HtoL" />
+							<label for="priceHtoL">Price high to low</label>
+						</div>
+					</div>
+
+					<div class="filter-container">
+						<div class="filter-container-title">Sort by ratings</div>
+						<input class="rating-range filter-container-inp" type="range" step="1" min="1" max="5" id="rating-range" />
+						<div class="ratings">
+							<span>1</span>
+							<span>2</span>
+							<span>3</span>
+							<span>4</span>
+							<span>5</span>
+						</div>
+					</div>
+
+					<div class="filter-container">
+						<div class="filter-container-title">Categories</div>
+						<div class="filter-input-container">
+							<input type="checkbox" id="AF1" />
+							<label for="AF1">Air Force 1</label>
+						</div>
+						<div class="filter-input-container">
+							<input type="checkbox" id="running" />
+							<label for="running">Running</label>
+						</div>
+						<div class="filter-input-container">
+							<input type="checkbox" id="skateboarding" />
+							<label for="skateboarding">Skateboarding</label>
+						</div>
+					</div>
+
+          <div class="apply-filter-btn">
+            <button class="btn btn-secondary">Apply</button>
+          </div>
+				</div>
+			</aside>
+
+			<!-- Product Listing Cards -->
+
+			<section class="product-cards">
+				
+        <!--  Product Card 1 -->
+        
+        <div class="card-container">
+					<div class="card-default">
+						<div class="card-header">
+							<div class="card-dismiss-btn material-icons-outlined">favorite</div>
+							<div class="card-img-div">
+								<img src="/assets/RUN1.jpg" class="card-img" />
+							</div>
+
+							<div class="card-text-div">
+								<h3 class="card-title">Nike Air Zoom</h3>
+								<h4 class="card-subtitle">Running Shoes</h4>
+							</div>
+						</div>
+
+						<div class="card-footer">
+							<div class="price">Price: $149</div>
+							<a href="#"></a><button class="card-button">Add To Cart</button></a>
+						</div>
+					</div>
+				</div>
+
+        <!--  Product Card 2  -->
+        
+        <div class="card-container">
+					<div class="card-default">
+						<div class="card-header">
+							<div class="card-dismiss-btn material-icons-outlined">favorite</div>
+							<div class="card-img-div">
+								<img src="/assets/RUN2.jpg" class="card-img" />
+							</div>
+
+							<div class="card-text-div">
+								<h3 class="card-title">Nike Air Zoom</h3>
+								<h4 class="card-subtitle">Running Shoes</h4>
+							</div>
+						</div>
+
+						<div class="card-footer">
+							<div class="price">Price: $149</div>
+							<a href="#"></a><button class="card-button">Add To Cart</button></a>
+						</div>
+					</div>
+				</div>
+
+        <!--  Product Card 3  -->
+        
+        <div class="card-container">
+					<div class="card-default">
+						<div class="card-header">
+							<div class="card-dismiss-btn material-icons-outlined">favorite</div>
+							<div class="card-img-div">
+								<img src="/assets/RUN3.jpg" class="card-img" />
+							</div>
+
+							<div class="card-text-div">
+								<h3 class="card-title">Nike Air Zoom</h3>
+								<h4 class="card-subtitle">Running Shoes</h4>
+							</div>
+						</div>
+
+						<div class="card-footer">
+							<div class="price">Price: $149</div>
+							<a href="#"></a><button class="card-button">Add To Cart</button></a>
+						</div>
+					</div>
+				</div>
+        	
+        <!--  Product Card 4  -->
+        
+        <div class="card-container">
+					<div class="card-default">
+						<div class="card-header">
+							<div class="card-dismiss-btn material-icons-outlined">favorite</div>
+							<div class="card-img-div">
+								<img src="/assets/RUN4.jpg" class="card-img" />
+							</div>
+
+							<div class="card-text-div">
+								<h3 class="card-title">Nike Air Zoom</h3>
+								<h4 class="card-subtitle">Running Shoes</h4>
+							</div>
+						</div>
+
+						<div class="card-footer">
+							<div class="price">Price: $149</div>
+							<a href="#"></a><button class="card-button">Add To Cart</button></a>
+						</div>
+					</div>
+				</div>
+
+        <!--  Product Card 5  -->
+        
+        <div class="card-container">
+					<div class="card-default">
+						<div class="card-header">
+							<div class="card-dismiss-btn material-icons-outlined">favorite</div>
+							<div class="card-img-div">
+								<img src="/assets/AF1.jpg" class="card-img" />
+							</div>
+
+							<div class="card-text-div">
+								<h3 class="card-title">Nike AF1 '07</h3>
+								<h4 class="card-subtitle">Nike Air Force 1</h4>
+							</div>
+						</div>
+
+						<div class="card-footer">
+							<div class="price">Price: $149</div>
+							<a href="#"></a><button class="card-button">Add To Cart</button></a>
+						</div>
+					</div>
+				</div>
+
+        <!--  Product Card 6  -->
+        
+        <div class="card-container">
+					<div class="card-default">
+						<div class="card-header">
+							<div class="card-dismiss-btn material-icons-outlined">favorite</div>
+							<div class="card-img-div">
+								<img src="/assets/Af2.jpg" class="card-img" />
+							</div>
+
+							<div class="card-text-div">
+								<h3 class="card-title">Nike AF1 '07</h3>
+								<h4 class="card-subtitle">Nike Air Force 1</h4>
+							</div>
+						</div>
+
+						<div class="card-footer">
+							<div class="price">Price: $149</div>
+							<a href="#"></a><button class="card-button">Add To Cart</button></a>
+						</div>
+					</div>
+				</div>
+
+        <!--  Product Card 7  -->
+        
+        <div class="card-container">
+					<div class="card-default">
+						<div class="card-header">
+							<div class="card-dismiss-btn material-icons-outlined">favorite</div>
+							<div class="card-img-div">
+								<img src="/assets/AF3.jpg" class="card-img" />
+							</div>
+
+							<div class="card-text-div">
+								<h3 class="card-title">Nike AF1 '07</h3>
+								<h4 class="card-subtitle">Nike Air Force 1</h4>
+							</div>
+						</div>
+
+						<div class="card-footer">
+							<div class="price">Price: $149</div>
+							<a href="#"></a><button class="card-button">Add To Cart</button></a>
+						</div>
+					</div>
+				</div>
+
+        <!--  Product Card 8  -->
+        
+        <div class="card-container">
+					<div class="card-default">
+						<div class="card-header">
+							<div class="card-dismiss-btn material-icons-outlined">favorite</div>
+							<div class="card-img-div">
+								<img src="/assets/AF4.jpg" class="card-img" />
+							</div>
+
+							<div class="card-text-div">
+								<h3 class="card-title">Nike AF1 '07</h3>
+								<h4 class="card-subtitle">Nike Air Force 1</h4>
+							</div>
+						</div>
+
+						<div class="card-footer">
+							<div class="price">Price: $149</div>
+							<a href="#"></a><button class="card-button">Add To Cart</button></a>
+						</div>
+					</div>
+				</div>
+
+        <!--  Product Card 9  -->
+        
+        <div class="card-container">
+					<div class="card-default">
+						<div class="card-header">
+							<div class="card-dismiss-btn material-icons-outlined">favorite</div>
+							<div class="card-img-div">
+								<img src="/assets/SB1.jpg" class="card-img" />
+							</div>
+
+							<div class="card-text-div">
+								<h3 class="card-title">Nike SB</h3>
+								<h4 class="card-subtitle">Skateboarding Shoes</h4>
+							</div>
+						</div>
+
+						<div class="card-footer">
+							<div class="price">Price: $149</div>
+							<a href="#"></a><button class="card-button">Add To Cart</button></a>
+						</div>
+					</div>
+				</div>
+
+        <!--  Product Card 10  -->
+        
+        <div class="card-container">
+					<div class="card-default">
+						<div class="card-header">
+							<div class="card-dismiss-btn material-icons-outlined">favorite</div>
+							<div class="card-img-div">
+								<img src="/assets/SB2.jpg" class="card-img" />
+							</div>
+
+							<div class="card-text-div">
+								<h3 class="card-title">Nike SB</h3>
+								<h4 class="card-subtitle">Skateboarding Shoes</h4>
+							</div>
+						</div>
+
+						<div class="card-footer">
+							<div class="price">Price: $149</div>
+							<a href="#"></a><button class="card-button">Add To Cart</button></a>
+						</div>
+					</div>
+				</div>
+
+        <!--  Product Card 11  -->
+        
+        <div class="card-container">
+					<div class="card-default">
+						<div class="card-header">
+							<div class="card-dismiss-btn material-icons-outlined">favorite</div>
+							<div class="card-img-div">
+								<img src="/assets/SB3.jpg" class="card-img" />
+							</div>
+
+							<div class="card-text-div">
+								<h3 class="card-title">Nike SB</h3>
+								<h4 class="card-subtitle">Skateboarding Shoes</h4>
+							</div>
+						</div>
+
+						<div class="card-footer">
+							<div class="price">Price: $149</div>
+							<a href="#"></a><button class="card-button">Add To Cart</button></a>
+						</div>
+					</div>
+				</div>
+
+        <!--  Product Card 12  -->
+        
+        <div class="card-container">
+					<div class="card-default">
+						<div class="card-header">
+							<div class="card-dismiss-btn material-icons-outlined">favorite</div>
+							<div class="card-img-div">
+								<img src="/assets/SB4.jpg" class="card-img" />
+							</div>
+
+							<div class="card-text-div">
+								<h3 class="card-title">Nike SB</h3>
+								<h4 class="card-subtitle">Skateboarding Shoes</h4>
+							</div>
+						</div>
+
+						<div class="card-footer">
+							<div class="price">Price: $149</div>
+							<a href="#"></a><button class="card-button">Add To Cart</button></a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
